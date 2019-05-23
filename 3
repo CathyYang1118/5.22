@@ -1,0 +1,14 @@
+s = 'azcbobobegghakl'
+list_test=s[0]
+lis=''
+
+for i in range(len(s)):
+    o = ord(s[i])
+    if o >= ord(list_test[len(list_test)-1]):
+        list_test+=s[i]
+        if len(list_test)>= len(lis):
+            lis = list_test
+    elif o <= ord(list_test[len(list_test)-1]):
+        list_test=s[i]
+        
+print(lis)
